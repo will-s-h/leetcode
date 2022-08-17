@@ -1,6 +1,6 @@
 class Solution {
 public:
-    int strStr(string h, string ne) { //O(n+m), uses KMP
+    int strStr(string h, string ne) { //O(n+m), uses KMP, actually slower with LeetCode's test cases
         if(ne == "") return 0;
         if(h == "") return -1;
         int n = (int) h.length(); int m = (int) ne.length();
