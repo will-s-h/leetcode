@@ -1,6 +1,7 @@
 class Solution {
 public:
-    int minSetSize(vector<int>& arr) { //O(N log N). Note that due to the constraints of the problem, you can also do an O(N) counting sort, but it's likely slower
+    int minSetSize(vector<int>& arr) { //O(N log N). Note that due to the constraints of the problem, you can also do an O(N) counting sort, 
+        // but it's likely slower due to the high constant factor.
         unordered_map<int, int> m;
         for(int i = 0; i < arr.size(); i++){
             m[arr[i]]++;
