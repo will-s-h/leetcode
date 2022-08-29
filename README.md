@@ -6,5 +6,4 @@ Issues/In Progress:
 | # | Title | Description |
 | ----------- | ----------- | ----------- |
 | 1169.cpp | Invalid Transactions | Solution is possible in $\mathcal O(N \log N)$, too lazy to implement|
-| 307.cpp | Range Sum Query - Mutable | TODO, segment tree/BST |
 | 135.cpp | Candy | Possible in one pass, still $\mathcal O(N)$ but much faster|
