@@ -37,4 +37,20 @@ public:
         
         return false;
     }
+    
+    bool rotateStringKMP(string s, string goal) { //O(N) with KMP
+        if(s.length() != goal.length()) return false;
+        s = goal + "#" + s + s.substr(0, s.length()-1);
+        
+        vector<int> lps(s.length());
+        for(int i = 1; i < s.length(); i++){
+            int j = lps[i-1];
+            while(j > 0 && s[i] != s[j]){
+                j = lps[j-1];
+            }
+            if(s[i] == s[j]) lps[i] = j+1;
+            if(lps[i] == goal.length()) return true;
+        }
+        return false;
+    }
 };
